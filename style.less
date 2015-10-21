@@ -1,0 +1,66 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+ul{
+	list-style-type: none;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+ul li{
+	position:relative;
+}
+.bar{
+	background-color: #eee;
+	width: 600px;
+	height: 40px;
+	margin: 0 auto;
+	ul{
+		li{
+			float: left;
+			line-height: 40px;
+			text-align: center;
+			// position: relative;
+			&:hover{
+				ul{
+					display: block;
+				}
+			}
+			a{
+				display: block;
+				width: 90px;
+				padding: 0 10px;
+				&:hover{
+					color: white;
+					background-color: #666;
+				}
+			}
+			ul{
+				position: absolute;
+				left: 0px;
+				top:40px;
+				display: none;
+				li{
+					float: none;
+					background-color: #eee;
+					margin-top: 2px;
+					//阿强给
+					text-overflow: ellipsis;
+    				white-space: nowrap;
+    				overflow: hidden;
+					&:hover{
+					color: white;
+					background-color: #666;
+				 }
+				}
+				a{
+					&:hover{
+						background-color: #06f;
+					}
+				}
+			}
+		}
+	}
+}
